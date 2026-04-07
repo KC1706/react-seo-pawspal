@@ -1,0 +1,710 @@
+import React from 'react';
+
+export default function Home() {
+  return (
+    <>
+      {/*  ✅ NAVIGATION  */}
+  <div id="navbar"></div>
+   {/*  <nav aria-label="Main navigation">
+    <div className="wrap nav-inner" style={{'display': 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', 'width': '100%', 'boxSizing': 'border-box'}}>
+      <a href="/" className="nav-logo" aria-label="PawsPal Connect Home" style={{'display': 'flex', 'alignItems': 'center', 'flexShrink': '0'}}>
+        <img src="/assets/logo-transparent.png" alt="PawsPal Logo" style={{'height': '32px', 'marginRight': '8px'}} />
+        PawsPal<span>.</span>Connect
+      </a>
+      <ul className="nav-links" role="list" style={{'alignItems': 'center', 'gap': '16px', 'listStyle': 'none', 'marginLeft': '24px', 'marginRight': 'auto', 'padding': '0'}}>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pet-identity/pet-digital-identity">Pet Identity</a></li>
+        <li><a href="/pet-health-records">Health Records</a></li>
+        <li><a href="/ai-vet">BharatPetGPT</a></li>
+        <li><a href="/pet-passport/pet-passport">Pet Passport</a></li>
+        <li><a href="/emergency-infrastructure">Emergency</a></li>
+        <li><a href="/blog/how-to-store-pet-health-records">Blog</a></li>
+      </ul>
+      <a href="/pet-identity/pet-digital-identity#create-pawid" id="nav-btn" className="btn btn-primary" style={{'display': 'inline-flex', 'alignItems': 'center', 'justifyContent': 'center', 'padding': '10px 18px', 'background': '#144b36', 'color': '#ffffff !important', 'fontWeight': '600', 'borderRadius': '50px', 'textDecoration': 'none', 'fontSize': '0.95rem', 'marginLeft': '20px', 'flexShrink': '0', 'transition': 'all 0.3s ease', 'whiteSpace': 'nowrap'}}>Create PetID Free &rarr;</a>
+      <button className="nav-toggle" aria-label="Toggle menu">
+        <i className="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>  */}
+
+  {/*  ✅ BREADCRUMB (Structured + SEO)  */}
+  <div className="breadcrumb" aria-label="Breadcrumb">
+    <div className="wrap">
+      <ol className="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">PAWID – Pet Digital Identity Platform</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  {/*  ✅ HERO — Keyword-rich H1  */}
+  <header className="hero" role="banner">
+    <div className="wrap hero-content">
+      <div className="hero-tag"> India's First Pet Operating System</div>
+      <h1>
+        Pet Digital Identity, <em>Health Records</em><br />
+        & AI Vet — All in One Platform
+      </h1>
+      <p className="lead">
+        PAWID gives every pet a permanent digital identity — storing health records,
+        enabling AI-powered vet consultations, generating a global pet passport,
+        and powering emergency care. India's leading PetOS.
+      </p>
+      <div className="hero-actions">
+        <a href="/pet-identity/pet-digital-identity#create-pawid" className="btn btn-amber">Create Free PetID →</a>
+        <a href="#how-it-works" className="btn btn-outline" style={{'color': '#fff', 'borderColor': 'rgba(255,255,255,.4)'}}>See How It
+          Works</a>
+      </div>
+      <div className="hero-stats">
+        <div className="stat-item">
+          <div className="stat-num">50K+</div>
+          <div className="stat-label">Pets Registered</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-num">2,400+</div>
+          <div className="stat-label">Verified Vets</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-num">12+</div>
+          <div className="stat-label">Cities Active</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-num">4.8★</div>
+          <div className="stat-label">App Rating</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {/*  ✅ TRUST BAR  */}
+  <div className="trust-bar" role="complementary" aria-label="Trust indicators">
+    <div className="wrap trust-inner">
+      <div className="trust-item"><span className="trust-icon"></span> India's #1 Pet Health Platform</div>
+      <div className="trust-item"><span className="trust-icon"></span> ISO 27001 Secured Data</div>
+      <div className="trust-item"><span className="trust-icon"></span> Vet-Verified Records</div>
+      <div className="trust-item"><span className="trust-icon"></span> Globally Recognised Pet Passport</div>
+      <div className="trust-item"><span className="trust-icon"></span> 24/7 AI Emergency Support</div>
+    </div>
+  </div>
+
+  {/*  ✅ WHAT IS PAWID — Category Definition  */}
+  <section className="section feature-section" id="what-is-petos" aria-labelledby="petos-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div>
+          <span className="feature-label">What is PetOS?</span>
+          <h2 id="petos-heading">India's First Pet Operating System (PetOS)</h2>
+          <p>
+            Just as a smartphone needs an operating system to connect apps, services and data — pets now need one too.
+            <strong>PAWID by PawsPal Connect</strong> is India's first Pet Operating System (PetOS): a unified digital
+            layer that connects every aspect of your pet's life.
+          </p>
+          <p style={{'marginTop': '14px'}}>
+            From a permanent <strong>pet digital identity</strong> to real-time health tracking, AI vet consultations,
+            emergency response, and a globally accepted <strong>pet passport</strong> — PAWID is the single source of
+            truth for your pet's world.
+          </p>
+          <ul className="feature-list" style={{'marginTop': '20px'}}>
+            <li>Permanent Digital Pet Identity (like Aadhaar for pets)</li>
+            <li>Centralised health records accessible anytime, anywhere</li>
+            <li>AI-powered vet consultation — no appointment needed</li>
+            <li>Global pet passport with QR verification</li>
+            <li>Emergency care coordination in minutes</li>
+            <li>Connects 2,400+ verified veterinarians across India</li>
+          </ul>
+          <div style={{'marginTop': '28px', 'display': 'flex', 'gap': '14px', 'flexWrap': 'wrap'}}>
+            <a href="/pet-identity/pet-digital-identity#create-pawid" className="btn btn-primary">Get Started Free</a>
+            <a href="/petos" className="btn btn-outline">Learn About PetOS →</a>
+          </div>
+        </div>
+        <div className="feature-visual" role="img" aria-label="PAWID platform illustration"><img
+            src="/assets/seo_adoption.png" style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Platform" /></div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ 4 CORE PILLARS — High-value keyword sections  */}
+  <section className="section" style={{'background': 'var(--cream)'}} aria-labelledby="pillars-heading">
+    <div className="wrap">
+      <div className="section-head" style={{'textAlign': 'center'}}>
+        <span className="feature-label">Core Platform</span>
+        <h2 id="pillars-heading" style={{'color': 'var(--forest)'}}>Four Pillars of the PAWID Platform</h2>
+        <p style={{'margin': '0 auto'}}>Everything your pet needs — from birth record to emergency room — in a single, trusted
+          digital platform.</p>
+      </div>
+      <div className="grid-4">
+        <div className="card">
+          <div className="card-icon"><img src="/assets/blog_app.png" style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}}
+              alt="ID" /></div>
+          <h3>Pet Digital Identity</h3>
+          <a href="/pet-identity/pet-digital-identity"
+            style={{'display': 'inline-block', 'marginTop': '14px', 'fontWeight': '600', 'fontSize': '.88rem'}}>Learn More →</a>
+        </div>
+        <div className="card">
+          <div className="card-icon"><img src="/assets/seo_health_record.png"
+              style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Health" /></div>
+          <h3>Pet Health Records</h3>
+          <p>Complete digital health history — vaccinations, lab reports, prescriptions, deworming schedules, and vet
+            notes.</p>
+          <a href="/pet-health-records"
+            style={{'display': 'inline-block', 'marginTop': '14px', 'fontWeight': '600', 'fontSize': '.88rem'}}>Learn More →</a>
+        </div>
+        <div className="card">
+          <div className="card-icon"><img src="/assets/seo_ai_vet.png" style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}}
+              alt="AI" /></div>
+          <h3>AI Vet (BharatPetGPT)</h3>
+          <p>24/7 intelligent veterinary support — symptom analysis, emergency guidance, and lab report interpretation.
+          </p>
+          <a href="/ai-vet" style={{'display': 'inline-block', 'marginTop': '14px', 'fontWeight': '600', 'fontSize': '.88rem'}}>Learn More
+            →</a>
+        </div>
+        <div className="card">
+          <div className="card-icon"><img src="/assets/seo_pet_travel.png"
+              style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Passport" /></div>
+          <h3>Global Pet Passport</h3>
+          <p>A vet-verified, QR-enabled document accepted internationally for pet travel and relocation.</p>
+          <a href="/pet-passport"
+            style={{'display': 'inline-block', 'marginTop': '14px', 'fontWeight': '600', 'fontSize': '.88rem'}}>Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ PET DIGITAL IDENTITY — Dedicated deep section  */}
+  <section className="section feature-section" id="pet-digital-identity" aria-labelledby="identity-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div className="feature-visual" role="img" aria-label="Pet digital identity card"><img src="/assets/blog_app.png"
+            style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Pet ID" /></div>
+        <div>
+          <span className="feature-label">Pet Digital Identity</span>
+          <h2 id="identity-heading">What is Pet Digital Identity — and Why Your Pet Needs One</h2>
+          <p>
+            A <strong>pet digital identity</strong> is a permanent, unique ID assigned to your pet that stores essential
+            information — medical history, vaccination records, ownership details, microchip data, and travel
+            eligibility — in one secure, shareable profile.
+          </p>
+          <p style={{'marginTop': '12px'}}>
+            Think of it as an <strong>Aadhaar card for your pet</strong>: a verified, trusted document that any vet,
+            shelter, airline, or authority can instantly access and trust. PAWID is India's first platform to offer this
+            at scale.
+          </p>
+          <ul className="feature-list" style={{'marginTop': '20px'}}>
+            <li>Permanent unique Pet ID linked to microchip</li>
+            <li>Verified ownership — prevents theft and disputes</li>
+            <li>Instant vet access to complete health history</li>
+            <li>Required for adoption, boarding, and international travel</li>
+            <li>QR-code shareable in seconds</li>
+            <li>Lost pet recovery system built in</li>
+          </ul>
+          <div style={{'marginTop': '28px', 'display': 'flex', 'gap': '14px', 'flexWrap': 'wrap'}}>
+            <a href="/pet-identity/pet-digital-identity#create-pawid" className="btn btn-primary">Create Free PetID
+              →</a>
+            <a href="/pet-identity/pet-digital-identity" className="btn btn-outline">Learn More About Pet Identity
+              →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ HOW IT WORKS  */}
+  <section className="section hiw-section" id="how-it-works" aria-labelledby="hiw-heading">
+    <div className="wrap">
+      <div className="section-head" style={{'textAlign': 'center'}}>
+        <span className="feature-label">Simple Setup</span>
+        <h2 id="hiw-heading" style={{'color': 'var(--forest)'}}>Create Your Pet Digital Identity in 4 Steps</h2>
+        <p style={{'margin': '0 auto'}}>Get started in under 5 minutes. Your pet's entire health world — digitalised forever.
+        </p>
+      </div>
+      <div className="grid-4">
+        <div className="step-card">
+          <div className="step-number">1</div>
+          <div className="step-icon"></div>
+          <h3>Download PAWID App</h3>
+          <p>Available on iOS and Android. Sign up with your mobile number in 60 seconds.</p>
+        </div>
+        <div className="step-card">
+          <div className="step-number">2</div>
+          <div className="step-icon"></div>
+          <h3>Create Pet Profile</h3>
+          <p>Add your pet's name, breed, date of birth, photo, and microchip ID if available.</p>
+        </div>
+        <div className="step-card">
+          <div className="step-number">3</div>
+          <div className="step-icon"></div>
+          <h3>Upload Health Records</h3>
+          <p>Add vaccination history, lab reports, prescriptions, and vet consultation notes.</p>
+        </div>
+        <div className="step-card">
+          <div className="step-number">4</div>
+          <div className="step-icon"></div>
+          <h3>Get Verified PetID</h3>
+          <p>A certified vet verifies your records and your pet receives a globally recognised PAWID.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ BENEFITS — Problem/Solution angle for SEO  */}
+  <section className="section benefits-section" aria-labelledby="benefits-heading">
+    <div className="wrap">
+      <div className="section-head">
+        <h2 id="benefits-heading">Why 50,000+ Pet Owners Choose PAWID</h2>
+        <p>From everyday health tracking to life-saving emergency care — PAWID is built for every moment.</p>
+      </div>
+      <div className="grid-3">
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Faster Emergency Care</h3>
+          <p>In a pet emergency, every second counts. Vets access your pet's full history instantly — no paperwork, no
+            delays.</p>
+        </div>
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Stress-Free Pet Travel</h3>
+          <p>Our globally recognised pet passport meets international travel requirements. Take your pet abroad with
+            confidence.</p>
+        </div>
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Lost Pet Recovery</h3>
+          <p>QR-enabled PAWID helps Good Samaritans contact you instantly if your pet is found — with verified ownership
+            proof.</p>
+        </div>
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Never Miss Vaccinations</h3>
+          <p>Smart reminders for vaccines, deworming, and health checkups ensure your pet stays protected year-round.
+          </p>
+        </div>
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Multi-Vet Continuity</h3>
+          <p>Switching vets? Every doctor sees the full, verified history — no repeated tests, no information gaps.</p>
+        </div>
+        <div className="benefit-card">
+          <div className="icon"></div>
+          <h3>Long-Term Health Insights</h3>
+          <p>AI-powered health analytics track weight, vitals, and behaviour trends — catching issues before they become
+            serious.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ PET HEALTH RECORDS — Dedicated deep content  */}
+  <section className="section records-section" id="pet-health-records" aria-labelledby="records-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div>
+          <span className="feature-label">Health Records</span>
+          <h2 id="records-heading">Why Pet Health Records Matter — and How PAWID Makes Them Effortless</h2>
+          <p>
+            Maintaining accurate <strong>pet health records</strong> is the single most important thing you can do for
+            your pet's long-term wellbeing. Yet 78% of Indian pet owners rely on paper records — which get lost,
+            damaged, or forgotten at critical moments.
+          </p>
+          <p style={{'marginTop': '12px'}}>
+            PAWID centralises every health event in a searchable, shareable, vet-verified digital record — accessible
+            from any device, anywhere in the world.
+          </p>
+          <div className="records-grid" style={{'marginTop': '24px'}}>
+            <div className="record-item">
+              <h4> Vaccination Records</h4>
+              <p>Complete history with due-date reminders for core and non-core vaccines.</p>
+            </div>
+            <div className="record-item">
+              <h4> Lab Reports</h4>
+              <p>Upload and store blood work, urine analysis, imaging, and pathology results.</p>
+            </div>
+            <div className="record-item">
+              <h4> Prescriptions</h4>
+              <p>All medications with dosage, duration, and prescribing vet details — searchable instantly.</p>
+            </div>
+            <div className="record-item">
+              <h4> Vet Consultation Notes</h4>
+              <p>Structured notes from every consultation, linked to the attending vet's verified profile.</p>
+            </div>
+            <div className="record-item">
+              <h4>⚖️ Weight & Growth</h4>
+              <p>Track weight, height, and growth milestones against breed-specific benchmarks.</p>
+            </div>
+            <div className="record-item">
+              <h4> Dental & Grooming</h4>
+              <p>Dental cleanings, grooming history, and preventive care log in one place.</p>
+            </div>
+          </div>
+        </div>
+        <div className="feature-visual" role="img" aria-label="Pet health records illustration"><img
+            src="/assets/seo_health_record.png" style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Health Records" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ AI VET — BharatPetGPT section  */}
+  <section className="section ai-vet-section" id="ai-vet" aria-labelledby="aivet-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div className="feature-visual" style={{'background': 'linear-gradient(145deg,#e8f5f0,#d0ecde)'}} role="img"
+          aria-label="AI Vet BharatPetGPT"><img src="/assets/seo_ai_vet.png"
+            style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="AI Vet" /></div>
+        <div>
+          <div className="ai-tag">⚡ Powered by AI</div>
+          <h2 id="aivet-heading">BharatPetGPT — India's First AI Vet for Pet Health</h2>
+          <p>
+            <strong>BharatPetGPT</strong> is PAWID's AI-powered veterinary assistant — available 24/7, trained on
+            millions of veterinary case records, and deeply integrated with your pet's individual health history.
+          </p>
+          <p style={{'marginTop': '12px'}}>
+            No more midnight panic. No more waiting for a morning appointment when your dog is showing unusual symptoms.
+            BharatPetGPT gives you instant, intelligent guidance — and flags emergencies that need immediate
+            professional attention.
+          </p>
+          <div className="ai-features">
+            <div className="ai-feature">
+              <div className="ai-feature-icon"></div>
+              <div>
+                <h4>Instant Symptom Analysis</h4>
+                <p>Describe symptoms in plain language — get a structured differential diagnosis and recommended actions
+                  in seconds.</p>
+              </div>
+            </div>
+            <div className="ai-feature">
+              <div className="ai-feature-icon"></div>
+              <div>
+                <h4>Emergency Triage Guidance</h4>
+                <p>AI assesses severity, advises first-aid steps, and connects you to the nearest emergency vet clinic
+                  in real time.</p>
+              </div>
+            </div>
+            <div className="ai-feature">
+              <div className="ai-feature-icon"></div>
+              <div>
+                <h4>Lab Report Interpretation</h4>
+                <p>Upload blood reports, urinalysis or imaging — AI explains results in plain language and flags
+                  anomalies.</p>
+              </div>
+            </div>
+            <div className="ai-feature">
+              <div className="ai-feature-icon">️</div>
+              <div>
+                <h4>Preventive Care Recommendations</h4>
+                <p>Personalised seasonal care plans, diet suggestions, and breed-specific preventive protocols.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ PET PASSPORT — Dedicated section with step-by-step  */}
+  <section className="section passport-section" id="pet-passport" aria-labelledby="passport-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div>
+          <span className="feature-label">Global Pet Travel</span>
+          <h2 id="passport-heading">How the PAWID Pet Passport Works — Your Pet's Global Travel Document</h2>
+          <p>
+            A <strong>pet passport India</strong> is a unified, internationally accepted document combining your pet's
+            identity, vaccination records, health certificates, and veterinary approvals into one QR-verified digital
+            file.
+          </p>
+          <p style={{'marginTop': '12px'}}>
+            PAWID automatically generates a compliant pet passport once a certified veterinarian verifies your pet's
+            records. No paperwork. No embassy queues. One digital document accepted in 40+ countries.
+          </p>
+          <div className="passport-steps" style={{'marginTop': '28px'}} role="list">
+            <div className="passport-step" role="listitem">
+              <div className="passport-step-num">1</div>
+              <div>
+                <h3>Create Your Pet's PAWID Profile</h3>
+                <p>Add basic details, upload an ID photo, and enter microchip number if available.</p>
+              </div>
+            </div>
+            <div className="passport-step" role="listitem">
+              <div className="passport-step-num">2</div>
+              <div>
+                <h3>Upload Vaccination & Health Records</h3>
+                <p>Add all required vaccinations — rabies, DHPP, leptospirosis — with dates and batch numbers.</p>
+              </div>
+            </div>
+            <div className="passport-step" role="listitem">
+              <div className="passport-step-num">3</div>
+              <div>
+                <h3>Vet Verification</h3>
+                <p>A PAWID-certified vet reviews and digitally signs the health certificate within 24 hours.</p>
+              </div>
+            </div>
+            <div className="passport-step" role="listitem">
+              <div className="passport-step-num">4</div>
+              <div>
+                <h3>Passport Issued with QR Code</h3>
+                <p>Receive a QR-enabled, tamper-proof digital passport — ready for airlines, customs, and boarding
+                  facilities.</p>
+              </div>
+            </div>
+            <div className="passport-step" role="listitem">
+              <div className="passport-step-num">5</div>
+              <div>
+                <h3>Travel with Confidence</h3>
+                <p>Your pet passport is accepted for international travel, relocation, and cross-state movement within
+                  India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="feature-visual" role="img" aria-label="Pet travel passport"><img src="/assets/seo_pet_travel.png"
+            style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Pet Passport" /></div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ EMERGENCY SERVICES  */}
+  <section className="section" style={{'background': 'var(--white)'}} id="pet-emergency" aria-labelledby="emergency-heading">
+    <div className="wrap">
+      <div className="grid-2">
+        <div className="feature-visual" style={{'background': 'linear-gradient(145deg,#fff0ea,#ffe0cc)'}} role="img"
+          aria-label="Pet emergency services"><img src="/assets/blog_emergency.png"
+            style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Emergency" /></div>
+        <div>
+          <span className="feature-label">Emergency Care</span>
+          <h2 id="emergency-heading">Pet Emergency Services — When Every Second Counts</h2>
+          <p>
+            Pet emergencies happen without warning. PAWID's <strong>emergency services module</strong> ensures that when
+            the worst happens, your pet's full health history is instantly available to any vet — anywhere in India.
+          </p>
+          <ul className="feature-list" style={{'marginTop': '20px'}}>
+            <li>One-tap emergency alert to nearby vets</li>
+            <li>Instant QR-share of complete health records</li>
+            <li>AI-guided first-aid instructions while en route</li>
+            <li>Real-time ambulance tracking (partner cities)</li>
+            <li>24/7 emergency vet helpline integration</li>
+            <li>Post-emergency follow-up and care plan</li>
+          </ul>
+          <a href="/pet-emergency" className="btn btn-primary" style={{'marginTop': '24px'}}>Emergency Services →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ CTA SECTION  */}
+  <section className="cta-section" id="create-petid" aria-labelledby="cta-heading">
+    <div className="wrap">
+      <h2 id="cta-heading">Create Your Pet's Digital Identity Today — It's Free</h2>
+      <p>Join 50,000+ pet owners who've given their pets a secure digital identity. Setup takes less than 5 minutes.</p>
+      <div className="cta-actions">
+        <a href="#" className="btn btn-white"> Download on iOS</a>
+        <a href="#" className="btn btn-white"> Download on Android</a>
+        <a href="/vet-software" className="btn btn-outline" style={{'color': '#fff', 'borderColor': 'rgba(255,255,255,.5)'}}>I'm a
+          Veterinarian →</a>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ FAQ — Schema + AI SEO  */}
+  <section className="section faq-section" id="faq" aria-labelledby="faq-heading">
+    <div className="wrap">
+      <div className="section-head">
+        <span className="feature-label">FAQs</span>
+        <h2 id="faq-heading">Frequently Asked Questions about PAWID & PetOS</h2>
+        <p style={{'margin': '0 auto'}}>Everything you need to know about pet digital identity, AI vet, pet passport and more.
+        </p>
+      </div>
+      <div className="faq-list" role="list">
+        <details className="faq-item">
+          <summary className="faq-q">What is Pet Digital Identity?</summary>
+          <div className="faq-a">Pet digital identity is a unique, lifelong ID assigned to every pet that stores medical
+            history, vaccination records, ownership details, and travel eligibility in one secure platform. PAWID
+            creates this identity and makes it shareable with vets, shelters, airlines, and authorities globally.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">What is PetOS — the Pet Operating System?</summary>
+          <div className="faq-a">PetOS (Pet Operating System) is a unified digital ecosystem that connects all aspects of
+            pet care — identity, health records, veterinary services, emergency response, marketplace, and community —
+            into one platform. PawsPal Connect's PAWID is India's first PetOS, providing a single source of truth for
+            your pet's world.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">How does BharatPetGPT (AI Vet) work?</summary>
+          <div className="faq-a">BharatPetGPT is our AI-powered veterinary assistant trained on millions of veterinary
+            records and deeply integrated with your pet's individual health history. You describe symptoms in plain
+            language, and the AI provides instant analysis, triage guidance, and connects you to the nearest vet when
+            needed — 24 hours a day, 7 days a week.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">What is a Pet Passport and how do I get one?</summary>
+          <div className="faq-a">A pet passport is a globally accepted digital document combining your pet's identity,
+            vaccination records, and medical history into a single QR-verified file. PAWID issues one automatically once
+            a certified vet verifies your pet's records — required for international travel, relocation, and airline
+            travel.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">Is PAWID available across India?</summary>
+          <div className="faq-a">Yes. PAWID is currently active in 12+ cities including Bengaluru, Mumbai, Delhi, Hyderabad,
+            Pune, Chennai, Kolkata, Jaipur, Ahmedabad, Chandigarh, Kochi, and Mysuru — with rapid expansion underway.
+            The platform is available nationwide for digital records and AI vet features.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">How does PAWID help in pet emergencies?</summary>
+          <div className="faq-a">PAWID's emergency module instantly surfaces your pet's complete health records, nearby
+            verified vet contacts, and AI-guided first-aid steps — all accessible via a single QR scan. This
+            dramatically reduces critical response time when every second matters. Vets can access records even if you
+            are not present.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">Can veterinarians use PAWID to manage their clinic?</summary>
+          <div className="faq-a">Yes. VetOS — our veterinary practice management module — gives clinics a complete digital
+            solution: appointment scheduling, patient record management, prescription writing, lab integration, and
+            billing. Vets can access patient histories instantly during consultations.</div>
+        </details>
+        <details className="faq-item">
+          <summary className="faq-q">Is my pet's health data secure on PAWID?</summary>
+          <div className="faq-a">Absolutely. PAWID uses ISO 27001-compliant security infrastructure with end-to-end
+            encryption, role-based access control, and regular independent security audits. Your pet's data is never
+            sold to third parties. You control who can view your pet's records at all times.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ BLOG / KNOWLEDGE HUB  */}
+  <section className="section blog-section" id="blog" aria-labelledby="blog-heading">
+    <div className="wrap">
+      <div className="section-head" style={{'textAlign': 'center'}}>
+        <span className="feature-label">Pet Care Knowledge Hub</span>
+        <h2 id="blog-heading" style={{'color': 'var(--forest)'}}>Expert Guides for Every Pet Parent</h2>
+        <p style={{'margin': '0 auto'}}>Evidence-based articles from veterinarians, behaviourists, and pet health experts.</p>
+      </div>
+      <div className="grid-3">
+        <article className="blog-card" itemscope itemtype="https://schema.org/Article">
+          <div className="blog-thumb green" style={{'overflow': 'hidden', 'padding': '0'}}><img src="/assets/seo_adoption.png"
+              style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Blog 1" /></div>
+          <div className="blog-body">
+            <div className="blog-tag">Health Records</div>
+            <h3 itemprop="headline"><a href="/blog/how-to-store-pet-health-records" style={{'color': 'var(--forest)'}}>How to
+                Manage Your Dog's Health Records Digitally in 2026</a></h3>
+            <p itemprop="description">Step-by-step guide to digitalising your pet's medical history — from vaccinations
+              to lab reports — and keeping them accessible in emergencies.</p>
+            <a href="/blog/how-to-store-pet-health-records" className="blog-link">Read Guide →</a>
+          </div>
+        </article>
+        <article className="blog-card" itemscope itemtype="https://schema.org/Article">
+          <div className="blog-thumb amber" style={{'overflow': 'hidden', 'padding': '0'}}><img src="/assets/blog_emergency.png"
+              style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Blog 2" /></div>
+          <div className="blog-body">
+            <div className="blog-tag">Emergency Care</div>
+            <h3 itemprop="headline"><a href="/blog/pet-emergency-guide" style={{'color': 'var(--forest)'}}>Pet Emergency
+                Guide: What Every Indian Pet Owner Must Know</a></h3>
+            <p itemprop="description">A comprehensive checklist and action plan for handling pet emergencies — from
+              seizures to poisoning — before you reach the vet.</p>
+            <a href="/blog/pet-emergency-guide" className="blog-link">Read Guide →</a>
+          </div>
+        </article>
+        <article className="blog-card" itemscope itemtype="https://schema.org/Article">
+          <div className="blog-thumb purple" style={{'overflow': 'hidden', 'padding': '0'}}><img src="/assets/blog_tracking.png"
+              style={{'width': '100%', 'height': '100%', 'objectFit': 'cover'}} alt="Blog 3" /></div>
+          <div className="blog-body">
+            <div className="blog-tag">App Reviews</div>
+            <h3 itemprop="headline"><a href="/blog/best-pet-care-app-india" style={{'color': 'var(--forest)'}}>Best Pet Care
+                Apps in India (2026) — Reviewed & Ranked</a></h3>
+            <p itemprop="description">We tested 12 pet care apps available in India. Here's an honest comparison of
+              features, pricing, vet network, and emergency support.</p>
+            <a href="/blog/best-pet-care-app-india" className="blog-link">Read Review →</a>
+          </div>
+        </article>
+      </div>
+      <div style={{'textAlign': 'center', 'marginTop': '40px'}}>
+        <a href="/blog" className="btn btn-outline">View All Pet Care Guides →</a>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ INTERNAL LINK NETWORK (SEO Silo)  */}
+  <section className="links-section" aria-label="Site sections">
+    <div className="wrap">
+      <p
+        style={{'color': 'rgba(255,255,255,.5)', 'fontSize': '.8rem', 'textAlign': 'center', 'textTransform': 'uppercase', 'letterSpacing': '.08em', 'marginBottom': '20px'}}>
+        Explore the PawsPal Ecosystem</p>
+      <div className="links-inner">
+        <a href="/pet-identity/pet-digital-identity" className="link-pill">Pet Digital Identity</a>
+        <a href="/pet-health-records" className="link-pill">Pet Health Records</a>
+        <a href="/ai-vet" className="link-pill">AI Vet Consultation</a>
+        <a href="/pet-passport/pet-passport" className="link-pill">Pet Passport India</a>
+        <a href="/emergency-infrastructure" className="link-pill">Pet Emergency Services</a>
+        <a href="/vet-software" className="link-pill">Veterinary Software (VetOS)</a>
+        <a href="/pet-marketplace" className="link-pill">Pet Marketplace</a>
+        <a href="/pet-adoption" className="link-pill">Pet Adoption Platform</a>
+        <a href="/city/bangalore" className="link-pill">Pet Services Bangalore</a>
+        <a href="/blog/how-to-store-pet-health-records" className="link-pill">Store Pet Records Guide</a>
+        <a href="/blog/best-pet-care-app-india" className="link-pill">Best Pet Apps India 2026</a>
+        <a href="/blog/pet-emergency-guide" className="link-pill">Pet Emergency Guide</a>
+        <a href="/blog/dog-health-tracking" className="link-pill">Dog Health Tracking</a>
+      </div>
+    </div>
+  </section>
+
+  {/*  ✅ FOOTER  */}
+  <footer role="contentinfo">
+    <div className="wrap">
+      <div className="footer-grid">
+        <div className="footer-brand">
+          <div className="footer-logo">PawsPal<span>.</span>Connect</div>
+          <p>India's First Pet Operating System — giving every pet a permanent digital identity, intelligent health
+            management, and emergency care readiness.</p>
+          <p style={{'marginTop': '12px', 'fontSize': '.82rem'}}>© 2026 PawsPal Connect Pvt. Ltd. · Bengaluru, India</p>
+        </div>
+        <div className="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="/pawid/pawid">PAWID Overview</a></li>
+            <li><a href="/pet-identity/pet-digital-identity">Pet Digital Identity</a></li>
+            <li><a href="/pet-health-records">Health Records</a></li>
+            <li><a href="/ai-vet">AI Vet</a></li>
+            <li><a href="/pet-passport/pet-passport">Pet Passport</a></li>
+            <li><a href="/emergency-infrastructure">Emergency Services</a></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>For Vets</h4>
+          <ul>
+            <li><a href="/vet-software">VetOS Software</a></li>
+            <li><a href="/vet-software#join">Join as a Vet</a></li>
+            <li><a href="/vet-software#community">Vet Community</a></li>
+            <li><a href="/vet-software#resources">Clinical Resources</a></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/how-to-store-pet-health-records">Pet Care Blog</a></li>
+            <li><a href="/blog/pet-emergency-guide">Emergency Guide</a></li>
+            <li><a href="/blog/dog-health-tracking">Dog Health Tracking</a></li>
+            <li><a href="/pet-os/pet-os">What is PetOS?</a></li>
+            <li><a href="/platform/platform">About Us</a></li>
+            <li><a href="/platform/platform#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <span>Built with ❤️ for India's 50 million pets</span>
+        <span>
+          <a href="/#privacy" style={{'color': 'rgba(255,255,255,.4)'}}>Privacy</a> ·
+          <a href="/#terms" style={{'color': 'rgba(255,255,255,.4)'}}>Terms</a> ·
+          <a href="/sitemap.xml" style={{'color': 'rgba(255,255,255,.4)'}}>Sitemap</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+    </>
+  );
+}
