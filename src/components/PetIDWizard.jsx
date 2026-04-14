@@ -5,20 +5,20 @@ import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/
 // Clean structured form state
 const initialState = {
   owner: {
-    name: "AKSHAY KUMAR",
-    email: "ahfdj@gmail.com",
-    phone: "7817384796",
-    country: "India",
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
     city: "",
-    password: "Arshit@123", // ✅ REQUIRED
-    confirmPassword: "Arshit@123", // ✅ REQUIRED
+    password: "", 
+    confirmPassword: "", 
   },
   pet: {
-    name: "fafdad",
-    dob: "2019-12-22", // ✅ FIXED FORMAT
-    species: "Cat",
+    name: "",
+    dob: "", 
+    species: "",
     breed: "",
-    gender: "Male",
+    gender: "",
   },
   health: {
     vetClinic: "",
@@ -228,21 +228,89 @@ export default function PetIDWizard() {
         </div>
 
         {showVerifyModal && (
-          <div className="vm-overlay">
-            <div className="vm-modal">
-              <button className="vm-close" onClick={closeVerifyModal}>
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.4)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 999,
+            }}
+          >
+            <div
+              style={{
+                background: "var(--white)",
+                borderRadius: "16px",
+                padding: "28px",
+                width: "100%",
+                maxWidth: "420px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+                position: "relative",
+                textAlign: "center",
+              }}
+            >
+              {/* CLOSE */}
+              <button
+                onClick={closeVerifyModal}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "12px",
+                  background: "transparent",
+                  border: "none",
+                  fontSize: "18px",
+                  cursor: "pointer",
+                  color: "#666",
+                }}
+              >
                 ✕
               </button>
 
-              <h2>Before continuing</h2>
+              {/* ICON */}
+              <div style={{ fontSize: "36px", marginBottom: "10px" }}>📧</div>
 
-              <p>
-                Please confirm that you have verified your email before going to
-                your dashboard.
+              {/* TITLE */}
+              <h2
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  color: "var(--forest)",
+                  marginBottom: "6px",
+                }}
+              >
+                Verify Your Email
+              </h2>
+
+              {/* TEXT */}
+              <p
+                style={{
+                  fontSize: "14px",
+                  color: "#555",
+                  lineHeight: "1.5",
+                  marginBottom: "18px",
+                }}
+              >
+                Please confirm that you have verified your email before
+                continuing to your dashboard.
               </p>
 
-              <button className="vm-btn" onClick={handleVerify}>
-                I have verified
+              {/* BUTTON */}
+              <button
+                onClick={handleVerify}
+                style={{
+                  width: "100%",
+                  background: "var(--forest)",
+                  color: "white",
+                  padding: "12px",
+                  borderRadius: "10px",
+                  border: "none",
+                  fontWeight: "600",
+                  cursor: "pointer",
+                }}
+              >
+                I have verified →
               </button>
             </div>
           </div>
@@ -1020,18 +1088,22 @@ export default function PetIDWizard() {
                 }}
               >
                 <button
-                  className="btn-s"
-                  style={{ fontSize: "13px", padding: "10px 18px" }}
+                  className="btn border btn-primary "
+                  style={{
+                    border: "1px solid black",
+                    color: "black",
+                    backgroundColor: "#0000001",
+                  }}
                   onClick={copyID}
                 >
                   📋 Copy PetID
                 </button>
                 <button
-                  className="btn-p"
-                  style={{ fontSize: "13px", padding: "10px 18px" }}
+                  className="btn btn-primary"
+                  style={{ border: "none", cursor: "pointer" }}
                   onClick={handleDashboardClick}
                 >
-                  Go to Dashboard →
+                  Go to Pet Owner Dashboard →
                 </button>
               </div>
 
@@ -1271,7 +1343,7 @@ export default function PetIDWizard() {
         </div>
       </div>
       {/*  Success Outcome UI (Hidden initially)  */}
-      <div
+      {/* <div
         style={{
           display: step >= 5 ? "block" : "none",
           marginTop: "40px",
@@ -1283,7 +1355,6 @@ export default function PetIDWizard() {
             className={`smart-card ${flipped ? "flipped" : ""}`}
             onClick={() => setFlipped((f) => !f)}
           >
-            {/*  FRONT  */}
             <div className="smart-card-face smart-card-front">
               <div className="sc-header">
                 <div className="sc-brand">
@@ -1335,7 +1406,6 @@ export default function PetIDWizard() {
               <div className="sc-bottom">
                 <div>
                   <div className="sc-id-row">
-                    {/* Later replace with real API response */}
                     PAW-IND-XXXXXX
                   </div>
 
@@ -1355,7 +1425,6 @@ export default function PetIDWizard() {
               </div>
             </div>
 
-            {/*  BACK  */}
 
             <div className="smart-card-face smart-card-back">
               <div className="sc-mag-stripe"></div>
@@ -1420,7 +1489,7 @@ export default function PetIDWizard() {
             </button>
           </div>
         </div>
-      </div>{" "}
+      </div> */}
     </>
   );
 }
